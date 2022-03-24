@@ -4,7 +4,7 @@ import { Table, Tr, Th, Td } from "@/components/Table";
 
 import Link from "next/link";
 
-const MostRuns = ({ mostRunsDetails }) => {
+const MostRuns = ({ mostRunsDetails }: any) => {
   return (
     <Table mb={20} mt={40} w={1000}>
       <thead>

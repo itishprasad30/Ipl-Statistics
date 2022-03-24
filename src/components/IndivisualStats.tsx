@@ -6,7 +6,7 @@ import Link from "next/link";
 
 import { useState } from "react";
 
-const IndividualStats = ({ individualDetails }) => {
+const IndividualStats = ({ individualDetails }: any) => {
   return (
     <Table mb={20} mt={40} w={1000}>
       <thead>
