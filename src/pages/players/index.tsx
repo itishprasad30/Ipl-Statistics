@@ -10,14 +10,12 @@ import { useState, useEffect } from "react";
 import { Input } from "@chakra-ui/react";
 import PlayersTable from "@/components/PlayersTable";
 
-// import PlayersTable from "../../components/PlayersTable";
-
 export default function Players({ data }: any) {
   const [searchTerm, setSearchTeam] = useState("");
   const [searchResults, setSearchResults] = useState(data);
 
   const handleChange = (e) => {
-    setSearchResults(e.target.value);
+    setSearchTeam(e.target.value);
   };
 
   useEffect(() => {

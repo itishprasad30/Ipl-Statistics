@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Box, Code, IconButton, Switch, Text } from "@chakra-ui/react";
 import { Table, Tr, Th, Td } from "@/components/Table";
 
-const PlayersTable = ({ playerDetails }) => {
+const PlayersTable = ({ playerDetails }: any) => {
   return (
     <Table mb={20} mt={40} w={600}>
       <thead>
