@@ -56,7 +56,7 @@ export default function Players({ data }: any) {
   );
 }
 
-export async function getStaticProps(context) {
+export async function getStaticProps() {
   const res = await fetch(`https://young-wildwood-83401.herokuapp.com/players`);
   const data = await res.json();
 

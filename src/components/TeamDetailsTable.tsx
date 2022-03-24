@@ -18,16 +18,16 @@ const TeamDetails = ({ teamDetails }: any) => {
         </Tr>
       </thead>
       <tbody>
-        <Box as="tr" key={teamDetails.team}>
-          <Td fontWeight="medium">{teamDetails.team}</Td>
-          <Td>{teamDetails.home_wins}</Td>
+        <Box as="tr" key={teamDetails?.team}>
+          <Td fontWeight="medium">{teamDetails?.team}</Td>
+          <Td>{teamDetails?.home_wins}</Td>
           <Td>
-            <Code>{teamDetails.away_wins}</Code>
+            <Code>{teamDetails?.away_wins}</Code>
           </Td>
-          <Td>{teamDetails.home_matches}</Td>
-          <Td>{teamDetails.away_matches}</Td>
-          <Td>{teamDetails.home_win_percentage}</Td>
-          <Td>{teamDetails.away_win_percentage}</Td>
+          <Td>{teamDetails?.home_matches}</Td>
+          <Td>{teamDetails?.away_matches}</Td>
+          <Td>{teamDetails?.home_win_percentage}</Td>
+          <Td>{teamDetails?.away_win_percentage}</Td>
         </Box>
       </tbody>
     </Table>
