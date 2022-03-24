@@ -41,6 +41,20 @@ The project is majorly structures in Three parts:
 
 Entire project is divided into small components which are reusable and easy to understand providing with the capability of scalability without sacrificing on the UI part.
 
+## Backend
+
+Backend is hosted on Heroku, I converted the dataset from csv, excel files to JSON and hosted them on Heroku. <br>
+[Link for backend](https://young-wildwood-83401.herokuapp.com/)
+<br>
+Every REST API serves its purpose
+
+- `/teams` for getting individual team details
+- `/players` for getting all the players
+- `/averageStrikerate` for getting all strikerates
+- `/matches` for getting all matches details
+- `/most_runs_average_strikerate` for getting most runs and average strike rate for every player
+- `/teams_home_and_away_statistics` for teams home and away statistics
+
 ## Screenshots
 
 ### Homepage
@@ -74,20 +88,6 @@ Entire project is divided into small components which are reusable and easy to u
 ### Average Strikerate & Most Runs for all players
 
 ![Homepage](https://github.com/manuarora700/ipl-statistics/blob/master/public/screenshots/7.png?raw=true)
-
-## Backend
-
-Backend is hosted on Heroku, I converted the dataset from csv, excel files to JSON and hosted them on Heroku. <br>
-[Link for backend](https://young-wildwood-83401.herokuapp.com/)
-<br>
-Every REST API serves its purpose
-
-- `/teams` for getting individual team details
-- `/players` for getting all the players
-- `/averageStrikerate` for getting all strikerates
-- `/matches` for getting all matches details
-- `/most_runs_average_strikerate` for getting most runs and average strike rate for every player
-- `/teams_home_and_away_statistics` for teams home and away statistics
 
 ## Learn More
 
