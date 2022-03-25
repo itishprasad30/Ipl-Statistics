@@ -25,9 +25,9 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 Page speed is calculated by Google Page Speed Insights <br>
 The first contentful paint takes 2.1s and has an average rating of 97/100. <br>
 
-![Homepage](https://github.com/manuarora700/ipl-statistics/blob/master/public/screenshots/pagespeed/1.png?raw=true)
+![HomePage](https://user-images.githubusercontent.com/60768713/160056519-e5423d8c-e40d-4452-9342-4668535ce691.png)
 
-However, caching is done internally by NextJS, so the first hit record a rating of 67/100, subsequent hits are cached and has a rating of 97/100. <br>
+However, caching is done internally by NextJS, so the first hit record a rating of 67/100, subsequent hits are cached and has a rating of 95/100. <br>
 
 This feature of NextJS is powerful since it is a SSG, it feels almost seamless while transitioning from one page to the other.
 
@@ -59,35 +59,37 @@ Every REST API serves its purpose
 
 ### Homepage
 
-![Homepage](https://github.com/manuarora700/ipl-statistics/blob/master/public/screenshots/8.png?raw=true)
+![HomePage](https://user-images.githubusercontent.com/60768713/160056782-a099cc64-0b1e-429a-a32d-80d285c7f078.png)
 
 ### Teams Page
 
-![Homepage](https://github.com/manuarora700/ipl-statistics/blob/master/public/screenshots/1.png?raw=true)
+![Teams](https://user-images.githubusercontent.com/60768713/160056902-c13d7967-e2ac-4c2f-8964-bddbe8e1c618.png)
+
 
 ### Team statistics
+![image](https://user-images.githubusercontent.com/60768713/160057015-95c25273-b721-49f0-9f69-f93b77a147ce.png)
 
-![Homepage](https://github.com/manuarora700/ipl-statistics/blob/master/public/screenshots/2.png?raw=true)
 
 ### Player Details
 
-![Homepage](https://github.com/manuarora700/ipl-statistics/blob/master/public/screenshots/3.png?raw=true)
+![image](https://user-images.githubusercontent.com/60768713/160057085-f8634bfc-85b4-4ca7-890c-c7a5085379c7.png)
+
 
 ### Individual Players
 
-![Homepage](https://github.com/manuarora700/ipl-statistics/blob/master/public/screenshots/4.png?raw=true)
+![image](https://user-images.githubusercontent.com/60768713/160057145-b4d2a851-7336-4dff-a959-b7632cceadd7.png)
+
 
 ### Individual Strikerate
 
-![Homepage](https://github.com/manuarora700/ipl-statistics/blob/master/public/screenshots/5.png?raw=true)
+![image](https://user-images.githubusercontent.com/60768713/160057216-9eda294b-64db-4bac-b090-f13dc4cd0033.png)
 
-### Search Player
 
-![Homepage](https://github.com/manuarora700/ipl-statistics/blob/master/public/screenshots/6.png?raw=true)
 
 ### Average Strikerate & Most Runs for all players
 
-![Homepage](https://github.com/manuarora700/ipl-statistics/blob/master/public/screenshots/7.png?raw=true)
+![image](https://user-images.githubusercontent.com/60768713/160057304-56376167-045f-4851-9a01-e435e968779a.png)
+
 
 ## Learn More
 
