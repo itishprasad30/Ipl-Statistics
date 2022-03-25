@@ -3,8 +3,13 @@ import { Box, Code, IconButton, Switch, Text } from "@chakra-ui/react";
 import { Table, Tr, Th, Td } from "@/components/Table";
 
 import Link from "next/link";
+import { Indivisuals } from "@/types/teams";
 
-const MostRuns = ({ mostRunsDetails }: any) => {
+const MostRuns = ({
+  mostRunsDeatails,
+}: {
+  mostRunsDeatails: Indivisuals[];
+}) => {
   return (
     <Table mb={20} mt={40} w={1000}>
       <thead>
@@ -20,7 +25,7 @@ const MostRuns = ({ mostRunsDetails }: any) => {
         </Tr>
       </thead>
       <tbody>
-        {mostRunsDetails.map((details) => (
+        {mostRunsDeatails.map((details) => (
           <Box as="tr" key={details.batsman}>
             <Td fontWeight="medium">{details.batsman}</Td>
             <Td>{details.total_runs}</Td>

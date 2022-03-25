@@ -6,12 +6,16 @@ import Header from "@/components/Header";
 import Navigation from "@/components/Navigation";
 import ViewData from "@/components/ViewData";
 import Footer from "@/components/Footer";
+import { Players } from "@/types/teams";
 
-function filterByValue(players: string[], nameOfPlayer: string[]) {
+function filterByValue(
+  players: any[],
+  nameOfPlayer: string | string[] | undefined
+) {
   return players.filter((name) => name.Player_Name === nameOfPlayer);
 }
 
-export default function Details({ data }: any) {
+export default function Details({ data }: { data: Players[] }) {
   const router = useRouter();
   const name = router.query.details;
 

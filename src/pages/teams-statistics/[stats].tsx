@@ -7,12 +7,13 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Navigation from "@/components/Navigation";
 import TeamDetailsTable from "@/components/TeamDetailsTable";
+import { TeamsData } from "@/types/teams";
 
-function filterByValueTeam(teams, teamName) {
+function filterByValueTeam (teams:any[], teamName:string[]|string|undefined) {
   return teams.filter((team) => team.team === teamName);
 }
 
-export default function TeamsStatisticsPage({ data }: any) {
+export default function TeamsStatisticsPage({ data }: { data: TeamsData []}) {
   const router = useRouter();
 
   const teamName = router.query.stats;

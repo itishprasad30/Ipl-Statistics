@@ -7,8 +7,9 @@ import MostRuns from "../../components/MostRuns";
 
 import Navigation from "../../components/Navigation";
 import Header from "../../components/Header";
+import { Indivisuals } from "@/types/teams";
 
-export default function MostRunsPage({ data }) {
+export default function MostRunsPage({ data }: { data: Indivisuals[] }) {
   return (
     <div className={styles.container}>
       <Head>
@@ -22,7 +23,7 @@ export default function MostRunsPage({ data }) {
           description="Most runs and average strikerate for every player"
         />
         <Navigation home="/" goBack="/" />
-        <MostRuns mostRunsDetails={data} />
+        <MostRuns mostRunsDeatails={data} />
       </main>
       <Footer />
     </div>

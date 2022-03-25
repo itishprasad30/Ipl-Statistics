@@ -6,12 +6,16 @@ import Header from "@/components/Header";
 import Navigation from "@/components/Navigation";
 import IndividualStats from "@/components/IndivisualStats";
 import Footer from "@/components/Footer";
+import { Indivisuals } from "@/types/teams";
 
-function filterByValue(player, nameOfPlayer) {
+function filterByValue(
+  player: any[],
+  nameOfPlayer: string | string[] | undefined
+) {
   return player.filter((name) => name.batsman === nameOfPlayer);
 }
 
-export default function IndividualDetails({ data }) {
+export default function IndividualDetails({ data }: { data: Indivisuals[] }) {
   const router = useRouter();
   const name = router.query.indivisulaStats;
   let playerDetails = filterByValue(data, name)[0];

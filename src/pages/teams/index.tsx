@@ -3,8 +3,9 @@ import styles from "../../styles/Home.module.css";
 import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { Teams } from "@/types/teams";
 
-export default function TeamsPage({ data }: any) {
+export default function TeamsPage({ data }: { data: Teams[] }) {
   return (
     <div className={styles.container}>
       <Head>
@@ -38,7 +39,7 @@ export default function TeamsPage({ data }: any) {
 
 export async function getStaticProps() {
   const res = await fetch(`https://young-wildwood-83401.herokuapp.com/teams`);
-  const data = await res.json();
+  const data: Teams = await res.json();
 
   if (!data) {
     return {

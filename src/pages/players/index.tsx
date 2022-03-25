@@ -5,16 +5,17 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Navigation from "@/components/Navigation";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, SetStateAction } from "react";
 
 import { Input } from "@chakra-ui/react";
 import PlayersTable from "@/components/PlayersTable";
+import { PlayersData } from "@/types/teams";
 
-export default function Players({ data }: any) {
+export default function Players({ data }: { data: PlayersData[] }) {
   const [searchTerm, setSearchTeam] = useState("");
   const [searchResults, setSearchResults] = useState(data);
 
-  const handleChange = (e) => {
+  const handleChange = (e: { target: { value: SetStateAction<string> } }) => {
     setSearchTeam(e.target.value);
   };
 
@@ -23,6 +24,7 @@ export default function Players({ data }: any) {
       player.Player_Name.toLowerCase().includes(searchTerm.toLowerCase())
     );
     setSearchResults(results);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [searchTerm]);
 
   return (
@@ -46,7 +48,7 @@ export default function Players({ data }: any) {
           value={searchTerm}
           onChange={handleChange}
         />
-        <PlayersTable playerDetails={searchResults} />
+        <PlayersTable playerdetails={searchResults} />
       </main>
 
       <Footer />

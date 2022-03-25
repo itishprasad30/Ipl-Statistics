@@ -1,6 +1,6 @@
 import { Box, Text } from "@chakra-ui/react";
 
-export const Th = (props) => (
+export const Th = (props: any) => (
   <Text
     as="th"
     textTransform="uppercase"
@@ -12,7 +12,7 @@ export const Th = (props) => (
   />
 );
 
-export const Td = (props) => (
+export const Td = (props: any) => (
   <Box
     as="td"
     color="gray.900"
@@ -23,7 +23,7 @@ export const Td = (props) => (
   />
 );
 
-export const Tr = (props) => (
+export const Tr = (props: any) => (
   <Box
     as="tr"
     backgroundColor="gray.50"
@@ -36,7 +36,7 @@ export const Tr = (props) => (
   />
 );
 
-export const Table = (props) => {
+export const Table = (props: any) => {
   return (
     <Box
       as="table"

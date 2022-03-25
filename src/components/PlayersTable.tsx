@@ -2,8 +2,9 @@ import React from "react";
 import Link from "next/link";
 import { Box, Code, IconButton, Switch, Text } from "@chakra-ui/react";
 import { Table, Tr, Th, Td } from "@/components/Table";
+import { PlayersData } from "@/types/teams";
 
-const PlayersTable = ({ playerDetails }: any) => {
+const PlayersTable = ({ playerdetails }: { playerdetails: PlayersData[] }) => {
   return (
     <Table mb={20} mt={40} w={600}>
       <thead>
@@ -13,7 +14,7 @@ const PlayersTable = ({ playerDetails }: any) => {
         </Tr>
       </thead>
       <tbody>
-        {playerDetails.map((playerDetail) => (
+        {playerdetails.map((playerDetail) => (
           <Box as="tr" key={playerDetail?.Player_Name}>
             <Td fontWeight="medium">{playerDetail?.Player_Name}</Td>
             <Td>
