@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import styles from "@/styles/Home.module.css";
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 const Home: NextPage = () => {
   return (
@@ -39,6 +40,7 @@ const Home: NextPage = () => {
             </Link>
           </div>
         </main>
+        <Footer />
       </div>
     </>
   );
